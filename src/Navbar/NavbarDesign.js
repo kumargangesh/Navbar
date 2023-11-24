@@ -48,7 +48,7 @@ function NavbarDesign() {
         <span className='navbarName'>Navbar</span>
         <div className='secondDiv'  style={rightProp}>
           <span className='crossIcon' onClick={closeDiv}  style={opacityProp}>&#9932;</span>
-          <Link to="/"><div className='home' onClick={closeDiv}>HOME</div></Link>
+          <Link to="/Navbar"><div className='home' onClick={closeDiv}>HOME</div></Link>
           <Link to="/aboutme"><div className='aboutMe' onClick={closeDiv}>ABOUT ME</div></Link>
           <Link to="/skills"><div className='skills' onClick={closeDiv}>SKILLS</div></Link>
           <Link to="/projects"><div className='projects' onClick={closeDiv}>PROJECTS</div></Link>
