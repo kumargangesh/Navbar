@@ -16,11 +16,11 @@ function NavbarLinks() {
         <div>
             <NavbarDesign />
             <Routes>
+                <Route path="/Navbar" element={<Home heading="HOME" data={value} />} />
                 <Route path="/aboutme" element={<AboutMe heading="ABOUT ME" data={value}/>} />
                 <Route path="/skills" element={<Skills heading="SKILLS" data={value}/>} />
                 <Route path="/projects" element={<Projects heading="PROJECTS" data={value}/>} />
                 <Route path="/contactme" element={<ContactMe heading="CONTACT ME" data={value}/>} />
-                <Route path="/" element={<Home heading="HOME" data={value} />} />
             </Routes>
         </div>
     </Router>
