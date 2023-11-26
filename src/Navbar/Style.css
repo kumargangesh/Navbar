@@ -44,20 +44,37 @@ body{
     position: fixed;
 }
 
-.switch{
+/* .switch{
     border: 1px solid white;
     padding: 15px;
     width: 100px;
     height: 18px;
     margin-left: 10px;
     margin-top: .5%;
+} */
+
+.form-switch{
+    /* border: 1px solid white; */
+    height: fit-content;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    width: fit-content;
 }
+
+/* .form-switch:hover{
+    background-color: rgb(12, 25, 37);
+} */
+
+/* .form-check-input{
+    margin-top: 2%;
+} */
 
 .secondDiv a{
     text-decoration: none;
 }
 
-.secondDiv div{
+
+.secondDiv .home{
     /* border: 1px solid white; */
     color: #BFA181;
     width: 100px;
@@ -69,7 +86,7 @@ body{
     transition: background 1.5s;
 }
 
-.secondDiv div:hover{
+.secondDiv .home:hover{
     background-color: #BFA181;
     color: rgb(12, 25, 37);
     border-radius: 5px;
@@ -110,7 +127,7 @@ body{
 @media(min-width: 300px){
     .mainDiv{
         position: initial;
-        width: 97%;
+        width: 100%;
     }
 
     .crossIcon{
@@ -133,18 +150,22 @@ body{
         margin-left: 0%;
         right: 100%;
         transition: right 2s;
+        /* border: 1px solid white; */
     }
 
-    .switch{
-        margin: 1% auto;
-        margin-left: 70%;
-        width: 60px;
-        height: 1px;
+    .form-switch{
+        /* border: 1px solid white; */
+        height: fit-content;
+        width: fit-content;
+        margin-top: 5px;
+        margin-left: 85%;
+        margin-top: 5px;
     }
 
-    .secondDiv div{
+    .secondDiv .home{
         margin: 5% auto;
         width: 40%;
+        /* border: 1px solid white; */
     }
 
     .data{
@@ -166,7 +187,7 @@ body{
 @media(min-width: 550px){
 
     .mainDiv{
-        width: 99%;
+        width: 100%;
         position: initial;
     }
 
@@ -192,14 +213,15 @@ body{
         transition: right 2s;
     }
 
-    .switch{
-        margin: 1% auto;
-        margin-left: 80%;
-        width: 60px;
-        height: 1px;
+    .form-switch{
+        /* border: 1px solid white; */
+        height: fit-content;
+        margin-top: 5px;
+        width: fit-content;
+        margin-left: 93%;
     }
 
-    .secondDiv div{
+    .secondDiv .home{
         margin: 5% auto;
         width: 50%;
     }
@@ -222,7 +244,7 @@ body{
 @media(min-width: 900px){
 
     .mainDiv{
-        width: 99.4%;
+        width: 100%;
         position: initial;
         /* border: 1px solid white; */
     }
@@ -247,15 +269,24 @@ body{
         transition: none;
     }
 
-    .switch{
+    .form-switch{
+        /* border: 1px solid white; */
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: fit-content;
+        margin-left: initial;
+    }
+
+    /* .switch{
         margin: initial;
         margin-left: 10px;
         margin-top: 1.5%;
         height: 20px;
         width: 120px;
-    }
+    } */
 
-    .secondDiv div{
+    .secondDiv .home{
         /* border: 1px solid white; */
         color: #BFA181;
         width: 130px;

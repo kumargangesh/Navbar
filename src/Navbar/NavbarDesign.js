@@ -12,6 +12,12 @@ function NavbarDesign() {
     opacity : "0"
   });
 
+  const [toggleColor, changeToggleColor] = useState({
+    color : "#BFA181"
+  });
+
+  const [mode, toggleMode] = useState(0);
+
   useEffect(() => {
     function handleResize() {
       const windowWidth = window.innerWidth;
@@ -41,6 +47,23 @@ function NavbarDesign() {
     }
   }
 
+  const changeMode = () => {
+    if(mode === 0){
+      toggleMode(1);
+      document.body.style.backgroundColor="white";
+      changeToggleColor({
+        color : "black"
+      });
+    }else if(mode === 1){
+      toggleMode(0);
+      document.body.style.backgroundColor="rgb(12, 25, 37)";
+      changeToggleColor({
+        color : "#BFA181"
+      });
+    }
+    console.log(mode);
+  }
+
   return (
     <div>
       <div className="mainDiv">
@@ -48,12 +71,14 @@ function NavbarDesign() {
         <span className='navbarName'>Navbar</span>
         <div className='secondDiv'  style={rightProp}>
           <span className='crossIcon' onClick={closeDiv}  style={opacityProp}>&#9932;</span>
-          <span className="switch"></span>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={changeMode} />
+          </div>
           <Link to="/"><div className='home' onClick={closeDiv}>HOME</div></Link>
-          <Link to="/aboutme"><div className='aboutMe' onClick={closeDiv}>ABOUT ME</div></Link>
-          <Link to="/skills"><div className='skills' onClick={closeDiv}>SKILLS</div></Link>
-          <Link to="/projects"><div className='projects' onClick={closeDiv}>PROJECTS</div></Link>
-          <Link to="/contactme"><div className='contactMe' onClick={closeDiv}>CONTACT ME</div></Link>
+          <Link to="/aboutme"><div className='home' onClick={closeDiv}>ABOUT ME</div></Link>
+          <Link to="/skills"><div className='home' onClick={closeDiv}>SKILLS</div></Link>
+          <Link to="/projects"><div className='home' onClick={closeDiv}>PROJECTS</div></Link>
+          <Link to="/contactme"><div className='home' onClick={closeDiv}>CONTACT ME</div></Link>
         </div>
       </div>
     </div>
