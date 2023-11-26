@@ -17,6 +17,7 @@ body{
     position: fixed;
     z-index: -1;
     background-color: rgb(12, 25, 37);
+    /* border: 1px solid white; */
 }
 
 .mainDiv .threeBarsIcon{
@@ -41,6 +42,15 @@ body{
     display: flex;
     flex-direction: row;
     position: fixed;
+}
+
+.switch{
+    border: 1px solid white;
+    padding: 15px;
+    width: 100px;
+    height: 18px;
+    margin-left: 10px;
+    margin-top: .5%;
 }
 
 .secondDiv a{
@@ -125,6 +135,13 @@ body{
         transition: right 2s;
     }
 
+    .switch{
+        margin: 1% auto;
+        margin-left: 70%;
+        width: 60px;
+        height: 1px;
+    }
+
     .secondDiv div{
         margin: 5% auto;
         width: 40%;
@@ -175,6 +192,13 @@ body{
         transition: right 2s;
     }
 
+    .switch{
+        margin: 1% auto;
+        margin-left: 80%;
+        width: 60px;
+        height: 1px;
+    }
+
     .secondDiv div{
         margin: 5% auto;
         width: 50%;
@@ -212,22 +236,36 @@ body{
 
     .secondDiv{
         height: 60px;
-        width: 80%;
+        width: fit-content;
         background-color: rgb(12, 25, 37);
         display: flex;
         flex-direction: row;
         right: 0%;
-        /* border: 1px solid white; */
         margin-right: 25%;
         position: initial;
-        margin-left: 10%;
+        margin-left: 5%;
         transition: none;
     }
 
-    .secondDiv div{
-        margin-top: 3%;
+    .switch{
+        margin: initial;
         margin-left: 10px;
-        width: 100px;
+        margin-top: 1.5%;
+        height: 20px;
+        width: 120px;
+    }
+
+    .secondDiv div{
+        /* border: 1px solid white; */
+        color: #BFA181;
+        width: 130px;
+        text-align: center;
+        padding: 15px;
+        margin-left: 10px;
+        font-weight: bolder;
+        /* margin-top: 3%;
+        margin-left: 10px;
+        width: 100px; */
     }
 
     .data{
