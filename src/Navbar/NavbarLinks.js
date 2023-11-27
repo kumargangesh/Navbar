@@ -20,7 +20,7 @@ function NavbarLinks() {
     });
 
   return (
-    <Router basename='/Navbar'>
+    <Router basename='/Navbar-ReactJS/'>
         <div>
             <NavbarDesign design={dataDesign} toggleDesign={setDataDesign} divBack={divBack} setDivBack={setDivBack} />
             <Routes>
