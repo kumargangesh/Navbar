@@ -65,9 +65,13 @@ body{
     background-color: rgb(12, 25, 37);
 } */
 
-/* .form-check-input{
-    margin-top: 2%;
-} */
+.form-check-input{
+    background-color: rgb(12, 25, 37);
+}
+
+.form-check-input:hover{
+    border: 2px solid #BFA181;
+}
 
 .secondDiv a{
     text-decoration: none;

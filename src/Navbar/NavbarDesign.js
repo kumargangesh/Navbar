@@ -46,7 +46,6 @@ function NavbarDesign(props) {
   const changeMode = () => {
     if(mode === 0){
       toggleMode(1);
-      // document.body.style.backgroundColor="white";
       document.body.style.backgroundColor="#F0FFFA"
       props.toggleDesign({
         // color : "black"
@@ -65,6 +64,7 @@ function NavbarDesign(props) {
         backgroundColor : "white"
       });
     }
+    closeDiv();
   }
 
   return (
