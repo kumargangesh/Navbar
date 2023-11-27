@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./Style.css";
 import {Link} from "react-router-dom";
 
-function NavbarDesign() {
+function NavbarDesign(props) {
 
   const [rightProp, setRightProp] = useState({
     right : "0%"
@@ -10,10 +10,6 @@ function NavbarDesign() {
 
   const [opacityProp, setOpacityProp] = useState({
     opacity : "0"
-  });
-
-  const [toggleColor, changeToggleColor] = useState({
-    color : "#BFA181"
   });
 
   const [mode, toggleMode] = useState(0);
@@ -50,18 +46,25 @@ function NavbarDesign() {
   const changeMode = () => {
     if(mode === 0){
       toggleMode(1);
-      document.body.style.backgroundColor="white";
-      changeToggleColor({
+      // document.body.style.backgroundColor="white";
+      document.body.style.backgroundColor="#F0FFFA"
+      props.toggleDesign({
+        // color : "black"
         color : "black"
+      });
+      props.setDivBack({
+        backgroundColor : "black"
       });
     }else if(mode === 1){
       toggleMode(0);
       document.body.style.backgroundColor="rgb(12, 25, 37)";
-      changeToggleColor({
+      props.toggleDesign({
         color : "#BFA181"
       });
+      props.setDivBack({
+        backgroundColor : "white"
+      });
     }
-    console.log(mode);
   }
 
   return (

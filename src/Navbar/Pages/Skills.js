@@ -3,10 +3,10 @@ import "../Style.css";
 
 function Skills(props) {
   return (
-    <div className='data'>
-        <h1>{props.heading}</h1>
-        <div className="line" />
-        <p>{props.data}</p>
+    <div className='data' style={props.design}>
+        <h1 style={props.design}>{props.heading}</h1>
+        <div className="line" style={props.divBack} />
+        <p style={props.design}>{props.data}</p>
     </div>
   )
 }
